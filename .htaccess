@@ -1,0 +1,5 @@
+AddDefaultCharset Off
+
+RewriteEngine On
+RewriteRule ^dictionary/(.*)$  /web/index.php/dictionary/$1
+RewriteRule ^$  /web/index.php/dictionary
