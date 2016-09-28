@@ -1,5 +1,8 @@
-AddDefaultCharset Off
+Options All -Indexes
+AddDefaultCharset utf-8
 
-RewriteEngine On
-RewriteRule ^dictionary/(.*)$  /web/index.php/dictionary/$1
-RewriteRule ^$  /web/index.php/dictionary
+
+RewriteEngine on
+RewriteRule ^dictionary(.*) /web/index.php/dictionary$1 [L]
+RewriteRule ^$ /web/index.php/dictionary [L]
+RewriteRule ^(.*)$ /web/index.php/$1 [L]
